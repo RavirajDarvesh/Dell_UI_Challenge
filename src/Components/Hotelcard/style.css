@@ -1,0 +1,45 @@
+.card:hover {
+    -webkit-box-shadow: 0px 0px 23px -3px rgba(196,167,167,1);
+-moz-box-shadow: 0px 0px 23px -3px rgba(196,167,167,1);
+box-shadow: 0px 0px 23px -3px rgba(196,167,167,1);
+    transition: all .2s;
+    transform: scale(1.01); 
+}
+
+.cusinestyle{
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 0;
+    border-bottom: 1px #e46d47 solid;
+}
+
+.cityBadge{
+
+        position: absolute;
+        left: -8px;
+        top: 18px;
+        background-color: #e46d47;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 5px 9px 4px;
+        max-width: 50%;
+        text-transform: uppercase;
+        border-color: #e46d47;
+        /* border-radius: 100%; */
+}
+
+.cityBadge::before{
+        box-sizing: border-box;
+        position: absolute;
+        bottom: -4px;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: inherit;
+        left: 0;
+        border-width: 9px 0 0 9px;
+        transform: skewY(45deg);
+
+}
